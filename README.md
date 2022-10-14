@@ -1,5 +1,5 @@
 # Тестовое задание
-##### React.js, axios, scss
+#### Я использовал React.js, axios, scss
 Запуск проекта
 
 ```
