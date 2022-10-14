@@ -1,0 +1,63 @@
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    padding: 20px;
+    border-radius: 12px;
+    height: 230px;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px;
+    cursor: pointer;
+
+    &__contact {
+        margin-top: 20px;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    &__contact-phone {
+        color: #868b8f;
+        font-weight: 500;
+        margin-left: 30px;
+    }
+
+    &__contact-mail {
+        color: #868b8f;
+        font-weight: 500;
+        margin-left: 30px;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+
+    &__icon {
+        color: #b652d1;
+        font-size: 17px;
+        position: absolute;
+        left: 0;
+        margin-top: 1px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
